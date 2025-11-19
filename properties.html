@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Property &mdash; Free Bootstrap 5 Website Template by Untree.co</title>
+
+    <style>
+      /* Search bar container */
+      .search-bar-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      /* Form styling */
+      .search-bar {
+        display: flex;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+
+      /* Input field */
+      .search-input {
+        flex: 1;
+        padding: 12px 20px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+      }
+
+      /* Search button */
+      .search-btn {
+        padding: 12px 25px;
+        border: none;
+        background-color: #005555;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================
+         HEADER / NAVBAR
+    ============================== -->
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container-fluid p-0">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start">
+              <img src="images/stackly_logo.webp" alt="Property Logo" style="height:40px;">
+            </a>
+            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+              <li class="has-children">
+                <a href="index.html" class="active">Home</a>
+                <ul class="dropdown">
+                  <li><a href="#">Home Page 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#properties">Properties</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================
+         HERO SECTION
+    ============================== -->
+    <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.webp')">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Properties</h1>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-white-50" aria-current="page">Properties</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         BODY / CONTENT SECTION
+    ============================== -->
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-6 text-center mx-auto">
+            <h2 class="font-weight-bold text-primary heading">Featured Properties</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar-wrap text-center">
+      <form class="search-bar" action="#" method="GET">
+        <input type="text" name="city" placeholder="Enter city" class="search-input" />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+
+    <!-- PROPERTY LISTINGS -->
+    <div class="section section-properties">
+      <div class="container">
+        <div class="row">
+          <!-- Each property item repeated -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$1,291,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Downtown Dubai</span>
+                  <span class="city d-block mb-3">Dubai</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">4 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">2 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for other properties -->
+                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$1,300,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Westminster</span>
+                  <span class="city d-block mb-3">London</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">2 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">2 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$1,450,800</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Canberra</span>
+                  <span class="city d-block mb-3">Australia</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">3 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">4 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$1,000,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Wellington</span>
+                  <span class="city d-block mb-3">New Zealand</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">3 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">3 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$2,800,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Hamburg</span>
+                  <span class="city d-block mb-3">Germany</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">2 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">2 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$4,291,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Granada</span>
+                  <span class="city d-block mb-3">Spain</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">4 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">3 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$7,000,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Doddaballapur</span>
+                  <span class="city d-block mb-3">Bengaluru</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">5 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">6 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$1,850,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Mexico City</span>
+                  <span class="city d-block mb-3">Mexico</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">3 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">4 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$5,760,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Coimbatore</span>
+                  <span class="city d-block mb-3">Tamilnadu</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">2 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">2 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$3,000,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Austin</span>
+                  <span class="city d-block mb-3">America</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">5 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">4 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$2,480,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Saint-Denis</span>
+                  <span class="city d-block mb-3">Paris</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">2 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">4 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="property-single.html" class="img">
+                <img src="images/img_1.webp" alt="Image" class="img-fluid" />
+              </a>
+              <div class="property-content">
+                <div class="price mb-2"><span>$1,560,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Lyon</span>
+                  <span class="city d-block mb-3">France</span>
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span><span class="caption">4 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span><span class="caption">5 baths</span>
+                    </span>
+                  </div>
+                  <a href="404.html" class="btn btn-primary py-2 px-3">See details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         FOOTER SECTION
+    ============================== -->
+<div class="site-footer">
+  <div class="container">
+    <div class="row">
+    <div class="row text-center text-md-start">
+      <!-- Contact -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Contact</h3>
+          <address>3210 Street, Chennai, Tamilnadu</address>
+          <ul class="list-unstyled links">
+            <li><a href="#">+91 9876543210</a></li>
+            <li><a href="#">+91 9047366578</a></li>
+            <li><a href="#">info@thestackly.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sources -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Sources</h3>
+          <ul class="list-unstyled links">
+            <li><a href="404.html">About us</a></li>
+            <li><a href="404.html">Services</a></li>
+            <li><a href="404.html">Vision</a></li>
+            <li><a href="404.html">Mission</a></li>
+            <li><a href="404.html">Terms</a></li>
+            <li><a href="404.html">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Company</h3>
+          <ul class="list-unstyled links">
+            <li><a href="404.html">Partners</a></li>
+            <li><a href="404.html">Business</a></li>
+            <li><a href="404.html">Careers</a></li>
+            <li><a href="404.html">Blog</a></li>
+            <li><a href="404.html">FAQ</a></li>
+            <li><a href="404.html">Creative</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Links</h3>
+          <ul class="list-unstyled links">
+            <li><a href="404.html">Our Vision</a></li>
+            <li><a href="404.html">About us</a></li>
+            <li><a href="404.html">Contact us</a></li>
+          </ul>
+          <ul class="list-unstyled social">
+            <li><a href="404.html"><span class="icon-instagram"></span></a></li>
+            <li><a href="404.html"><span class="icon-twitter"></span></a></li>
+            <li><a href="404.html"><span class="icon-facebook"></span></a></li>
+            <li><a href="404.html"><span class="icon-linkedin"></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Google Map</h3>
+          <div class="footer-map mt-3">
+            <iframe
+              width="150"
+              height="150"
+              style="border:0; border-radius:8px;"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31096.299901780897!2d80.2209663!3d13.0826802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265d24b5c7587%3A0x7a667c4b108a52d!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <p>
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script>
+          . All Rights Reserved.
+        </p>
+        <div>
+          Distributed by <a href="https://stackly.com/" target="_blank">stackly</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+        <script>
+  
+  document.querySelector(".search-bar").addEventListener("submit", function (e) {
+    e.preventDefault();  // prevent page reload
+
+    let input = document.querySelector(".search-input").value.trim().toLowerCase();
+
+    // Get all property cards
+    let cards = document.querySelectorAll(".property-item");
+
+    cards.forEach(card => {
+        let city = card.querySelector(".city").innerText.trim().toLowerCase();
+
+        // Show card if city matches search
+        if (city.includes(input) || input === "") {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+</script>
+  </body>
+</html>

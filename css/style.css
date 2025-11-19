@@ -1829,7 +1829,7 @@ progress {
     color: #212529;
     background-color: #fff;
     border-color: #8090a5;
-    outline: 0;
+    border-radius: 4px; 
     -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 32, 74, 0.25);
     box-shadow: 0 0 0 0.25rem rgba(0, 32, 74, 0.25); }
   .form-control::-webkit-date-and-time-value {
@@ -9201,10 +9201,20 @@ textarea.form-control-lg {
 .site-nav {
   padding-top: 20px;
   padding-bottom: 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 9;
   width: 100%; }
+
+  .site-nav,
+.site-navigation {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
   .site-nav h1, .site-nav .h1 {
     margin: 0;
     padding: 0;
